@@ -7,6 +7,13 @@
 sudo rm -rf backend.py && sudo wget https://xxxx.com/backend.py && sudo python backend.py
 ```
 
+注意，在Azure主机里需要换位root权限：
+```
+sudo -i
+```
+
+
+
 在 /app/Controllers/Mod_Mu 添加代码：
 ```
     public function getIP()
