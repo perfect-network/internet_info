@@ -1,3 +1,5 @@
+SSPANEL后端一键脚本食用教程：[点击前往](https://github.com/perfect-network/internet_info/edit/master/sspanel3_backend.md)
+
 SSH公钥：
 ```
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFWLv+d4Ig/jzLT6bL8G/JUwVIR79W5BOgBqQM2ui3XFRb3CkzlFEDoArbPgS3Au+RONoYuJ1DIHPeafN5cWEb2QkeSa2gSz1Me4+t/r2NhO1Y87zvlR6255OffOCur3cniJpQf60/fSXtREWcA5M/hunqKfTxVbbLU4T5LDxLdVZJvLSFB9LhLwdLHbkKyVIx7nPLhs+Riet7FBiL90wynkS801gV3iDB3tHE50zV8kgGLsEId052sF+WGwmxf/1LEjWEesUhPJbiRJy1MFRn6QOoYOfCNAyXC4uMoqJH/lCcyXtDBiB+y0VMM77RnXulFyvYixl+syLR+yXc/KkD root@localhost.localdomain
