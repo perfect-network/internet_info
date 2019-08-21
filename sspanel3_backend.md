@@ -1,20 +1,8 @@
-修改backend.py  里面的backend_url 和 backend_token
-
-（backend.py的代码也在这下面，自行复制）
-
-然后将脚本放在某主机，每次用命令即可实现.....：
-```
-sudo rm -rf backend.py && sudo wget https://xxxx.com/backend.py && sudo python backend.py
-```
-
-注意，在Azure主机里需要换位root权限：
-```
-sudo -i
-```
 
 
 
-在 /app/Controllers/Mod_Mu 添加代码：
+
+#### 第一步，在 /app/Controllers/Mod_Mu 添加代码：
 ```
     public function getIP()
     {
@@ -53,7 +41,7 @@ sudo -i
 
     }
 ```
-或者直接复制去覆盖整个文件：
+#### 或者直接复制去覆盖整个文件：
 ```
 <?php
 
@@ -214,6 +202,32 @@ class NodeController extends BaseController
 }
 
 ```
+
+
+#### 第二步，在/config/routes.php 331行添加：
+```
+    $this->get('/nodes/info', App\Controllers\Mod_Mu\NodeController::class . ':node');
+```
+
+#### 第三步，修改backend.py  里面的backend_url 和 backend_token
+```
+backend_url = "https://www.baidu.com/" #机场网址  如：https://www.baidu.com/
+backend_token = 'token' #你的 mukey
+```
+
+（backend.py的代码也在这下面，自行复制）
+
+然后将脚本放在某主机，每次用命令即可实现.....：
+```
+sudo rm -rf backend.py && sudo wget https://xxxx.com/backend.py && sudo python backend.py
+```
+
+注意，在Azure主机里需要换位root权限：
+```
+sudo -i
+```
+
+##### 最终的效果是，全自动配置后端
 
 backend.py 的代码：
 ```
